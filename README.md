@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - ` localhost:3000/` takes you `HomePage`
 - ` localhost:3000/contact` takes you to the `ContactPage`
 - ` localhost:3000/people` takes you to the `PeoplePage`
-    - `localhost:3000/people/0` and `localhost:3000/people/1` take you to the singular `PersonPage` 
+- `localhost:3000/people/0` and `localhost:3000/people/1` take you to the singular `PersonPage` 
 
 #### Component Types
 - Presentational (Dumb) Components (do not manage data(state))
