@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import Contact from './pages/contact';
+import Home from './pages/home';
+import PeoplePage from './pages/people';
+import PersonPage from './pages/person';
 
-function App() {
+const App = () => {
+
+  const PageSwitch = () => (
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/contact' component={Contact} />
+      <Route exact path='/people' component={PeoplePage} />
+      <Route exact path='/people/:personId' component={PersonPage} />
+    </Switch>
+  )
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Switch>
+        <PageSwitch />
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App;
