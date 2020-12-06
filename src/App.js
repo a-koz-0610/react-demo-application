@@ -39,6 +39,7 @@ const App = () => {
       <Route exact path='/people/:slug'>
         <PersonScreen people={people} />
       </Route>
+
     </Switch>
   )
 
