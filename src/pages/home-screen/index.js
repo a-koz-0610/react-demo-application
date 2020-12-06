@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.module.scss';
 
-const Home = () => {
+const HomeScreen = () => {
     return (
         <>
             <h1 className={style.homeTitle}>Home is where the heart is... but Im sick of quarantine</h1>
@@ -9,4 +9,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomeScreen;

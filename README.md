@@ -19,10 +19,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### What this demo app covers
 
 #### Custom Routing to the following endpoints
-- ` localhost:3000/` takes you `HomePage`
-- ` localhost:3000/contact` takes you to the `ContactPage`
-- ` localhost:3000/people` takes you to the `PeoplePage`
-- `localhost:3000/people/0` and `localhost:3000/people/1` take you to the singular `PersonPage` 
+- ` localhost:3000/` takes you `HomeScreen`
+- ` localhost:3000/contact` takes you to the `ContactScreen`
+- ` localhost:3000/people` takes you to the `PeopleScreen`
+- `localhost:3000/people/0` and `localhost:3000/people/1` take you to the singular `PersonScreen` 
 
 #### Component Types
 - Presentational (Dumb) Components (do not manage data(state))

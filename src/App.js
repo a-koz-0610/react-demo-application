@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
-import Contact from './pages/contact';
+import ContactScreen from './pages/contact-screen';
 import Header from './components/header';
-import Home from './pages/home';
+import HomeScreen from './pages/home-screen';
 import PersonScreen from './pages/person-screen';
 import PeopleScreen from './pages/people-screen';
 
@@ -27,9 +27,11 @@ const App = () => {
 
   const PageSwitch = () => (
     <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/contact' component={Contact} />
+      {/* routing for presentational components */}
+      <Route exact path='/' component={HomeScreen} />
+      <Route exact path='/contact' component={ContactScreen} />
 
+      {/* routing for stateful components */}
       <Route exact path='/people'>
         <PeopleScreen people={people} />
       </Route>
