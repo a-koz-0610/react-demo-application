@@ -2,7 +2,6 @@ import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import ContactScreen from './pages/contact-screen';
-import Header from './components/header';
 import HomeScreen from './pages/home-screen';
 import PersonScreen from './pages/person-screen';
 import PeopleScreen from './pages/people-screen';
@@ -45,7 +44,6 @@ const App = () => {
 
   return (
     <div>
-      <Header />
       <BrowserRouter>
         <PageSwitch />
       </BrowserRouter>
