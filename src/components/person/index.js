@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Person = ({ person }) => {
-
     return (
         <div>
-            <h3>Name: {person.name}</h3>
+            <Link to={`/people/${person.slug}`}>{person.name}</Link>
             <h4>Age: {person.age}</h4>
         </div>
     )
