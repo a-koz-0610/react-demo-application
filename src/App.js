@@ -5,6 +5,9 @@ import ContactScreen from './pages/contact-screen';
 import HomeScreen from './pages/home-screen';
 import PersonScreen from './pages/person-screen';
 import PeopleScreen from './pages/people-screen';
+import Header from './components/header';
+import Error404 from './pages/error-screen';
+import FavoriteMoviesScreen from './pages/favorite-movies-screen';
 
 const App = () => {
 
@@ -13,13 +16,19 @@ const App = () => {
       name: 'Alan',
       age: 38,
       personId: 0,
-      slug: 'alan-k'
+      slug: 'alan-k',
+      favoriteMovies: [
+        'goonies ', ' fight club'
+      ]
     },
     {
       name: 'Joe',
       age: 35,
       personId: 1,
-      slug: 'joe-k'
+      slug: 'joe-k',
+      favoriteMovies: [
+        'rambo ', ' catch me if you can'
+      ]
     }
 
   ]
@@ -39,11 +48,19 @@ const App = () => {
         <PersonScreen people={people} />
       </Route>
 
+      <Route exact path='/people/favorite-movies/:slug'>
+        <FavoriteMoviesScreen people={people} />
+      </Route>
+
+
+      <Route component={Error404} />
+
     </Switch>
   )
 
   return (
     <div>
+      <Header />
       <BrowserRouter>
         <PageSwitch />
       </BrowserRouter>

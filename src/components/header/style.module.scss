@@ -1,0 +1,15 @@
+.header__container{
+    background-color: #AAA;
+
+    & h1{
+        color: blue;
+    }
+
+    & p{
+        background-color: green;
+    }
+
+    @media(max-width: 500px){
+        background-color: red;
+    }
+}
