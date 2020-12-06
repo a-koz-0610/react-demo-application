@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - ` localhost:3000/` takes you `HomeScreen`
 - ` localhost:3000/contact` takes you to the `ContactScreen`
 - ` localhost:3000/people` takes you to the `PeopleScreen`
-- `localhost:3000/people/0` and `localhost:3000/people/1` take you to the singular `PersonScreen` 
+- `localhost:3000/people/alan-k` and `localhost:3000/people/joe-k` take you to the singular `PersonScreen` with a customized slug for routing 
 
 #### Component Types
 - Presentational (Dumb) Components (do not manage data(state))
