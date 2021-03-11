@@ -4,7 +4,7 @@ import style from './style.module.scss';
 const HomeScreen = () => {
     return (
         <>
-            <h1 className={style.homeTitle}>Home is where the heart is... but Im sick of quarantine</h1>
+            <h1 className={style.homeTitle}>Home is where the heart is</h1>
         </>
     )
 }

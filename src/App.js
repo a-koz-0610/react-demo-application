@@ -60,8 +60,8 @@ const App = () => {
 
   return (
     <div>
-      <Header />
       <BrowserRouter>
+        <Header />
         <PageSwitch />
       </BrowserRouter>
     </div>

@@ -1,15 +1,25 @@
 .header__container{
     background-color: #AAA;
+}
 
-    & h1{
-        color: blue;
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 200px;
+
+    & a {
+        background-color: #444444;
+        border-radius: 10px;
+        color: #ffffff;
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+        width: 80px;
     }
 
-    & p{
-        background-color: green;
-    }
-
-    @media(max-width: 500px){
-        background-color: red;
+    & a:active {
+        background-color: #111111;
+        transition: .5s;
     }
 }
